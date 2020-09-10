@@ -1,5 +1,6 @@
 # semi_active_rectifier
 
+![naked pcb](https://raw.githubusercontent.com/kopchik/semi_active_rectifier/master/pics/pcb.png)
 
 Losses on a conventional diode bridge rectifier a quite high due to a large drop on diodes. This have the following consequencies:
 1. A lot of heat dissipation. This prohibits compact and efficient devices.
