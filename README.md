@@ -13,3 +13,16 @@ Total calculate heat dissipation is 2.3W@25C. I expect the actual dissipation to
 In comparision, a bridge made of silicon diodes would dissipate about twice more power.
 
 The pcb has a GBU-like shape.
+
+## Some caveats and precautions
+
+1. Not all fets are born equal. The peak current can be more than 30A (inrush current). Most sot23 fets cannot handle that (according to soa). The good news is, the dropout on a mosfet cannot be more than ~0.6V in this circuit because they are shunted by diodes. Still, I decided to use mosfet in powerpak package because they can handle more abuse.
+2. Mosfet should be reasonably low Vgs(th), or it will not work well for low voltages.
+3. Due to high peak currents (~20A), a mosfet should have Rds(on) of less than some 30mOhm, otherwise most of current will go through the diode. In other words, mosfet drop under peak current should be less than drop on the diode.
+4. There's still quite a lot of heat to dissipate. I tried to make the pcb in such a way that it works as a heatsink.
+
+
+## TODO:
+
+[] Test it
+[] Post pics
