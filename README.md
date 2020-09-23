@@ -2,6 +2,8 @@
 
 ![schematic](https://raw.githubusercontent.com/kopchik/semi_active_rectifier/master/pics/schematic.png)
 ![naked pcb](https://raw.githubusercontent.com/kopchik/semi_active_rectifier/master/pics/pcb.png)
+![assembled board](https://raw.githubusercontent.com/kopchik/semi_active_rectifier/master/pics/assembled_board.jpg)
+![assembled board from back](https://raw.githubusercontent.com/kopchik/semi_active_rectifier/master/pics/assembled_board_back.jpg)
 
 Losses on a conventional diode bridge rectifier a quite high due to a large drop on diodes. This have the following consequencies:
 1. A lot of heat dissipation. This prohibits compact and efficient devices.
@@ -31,9 +33,10 @@ I did a quick measurement with DC current.
 
 1. Below 2V input, when fets are closed, the measured dropout of two diodes was 0.6V, the maximum temperature was about 75C on free air. 
    Calculated power dissipation is 1.2W, which is I'd say maximum for this tiny board.
-2. At 4V, the measured dropout was 0.295V on a diode, and 0.07V on mosfet. Dissipation: 0.73W. Tolerable :). Calculated Rds(on) of mosfet is 33mOhm.
+2. At 4V, the measured dropout was 0.295V on a diode, and 0.07V on mosfet. Dissipation: 0.73W. Tolerable :). Calculated Rds(on) of mosfet is 33mOhm. It seems 4V of Vgs is not enough to fully open it as it's supposed to have Rds(on) of less than 15mOhm.
 3. A jelly-bean GBU module measured 1.6V drop at 2A, which gives 3.2W dissipation. Meh :(
 
-## TODO:
 
-[] Post pics
+## Conclusion
+
+The approach has proved to work :)
