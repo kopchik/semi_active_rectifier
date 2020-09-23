@@ -25,6 +25,7 @@ The pcb has a GBU-like shape.
 3. Due to high peak currents (~20A), a mosfet should have Rds(on) of less than some 30mOhm, otherwise most of current will go through the diode. In other words, mosfet drop under peak current should be less than drop on the diode.
 4. There's still quite a lot of heat to dissipate. I tried to make the pcb in such a way that it works as a heatsink.
 5. My DMM couldn't test FERD diodes. Presumeably due to high leakage.
+6. The layout is a bit rushed, there are things to improve. E.g., the "-" trace is a bit skinny, the solder mask covers link holes, etc.
 
 
 ## Evaluation
